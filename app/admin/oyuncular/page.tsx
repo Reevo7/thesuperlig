@@ -24,39 +24,38 @@ export default async function OyuncularPage() {
           <div className="space-y-4">
 
   {players.map((player: any) => (
-              <Link
-                key={player.id}
-                href={`/admin/oyuncular/${player.steamId}`}
-                className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
-              >
-                <div className="flex items-center gap-4">
+  <Link
+    key={player.id}
+    href={`/oyuncu/${player.id}`}
+    className="
+      block
+      rounded-2xl
+      bg-white/5
+      p-6
+      hover:bg-white/10
+    "
+  >
 
-                  <img
-                    src={player.avatar || "/logo.png"}
-                    alt={player.username}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
+    <h2 className="text-xl font-black">
+      {player.username}
+    </h2>
 
-                  <div>
+    <p className="text-slate-400">
+      {player.team || "Takımı Yok"}
+    </p>
 
-                    <h2 className="text-2xl font-bold">
-                      {player.username}
-                    </h2>
+    <div className="mt-5 text-sm text-slate-300 space-y-1">
 
-                    <p className="text-gray-400">
-                      {player.team || "Takımı Yok"}
-                    </p>
+      <p>⚽ Gol: {player.goals}</p>
 
-                  </div>
+      <p>🅰️ Asist: {player.assists}</p>
 
-                </div>
+      <p>🧤 Save: {player.saves}</p>
 
-                <div className="rounded-xl bg-blue-600 px-5 py-2 font-bold">
-                  Düzenle
-                </div>
+    </div>
 
-              </Link>
-            ))}
+  </Link>
+))}
 
           </div>
         )}
