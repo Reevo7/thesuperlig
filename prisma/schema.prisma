@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id                Int      @id @default(autoincrement())
+  steamId           String   @unique
+  username          String
+  avatar            String?
+  team              String?
+  goals             Int      @default(0)
+  assists           Int      @default(0)
+  saves             Int      @default(0)
+  matches           Int      @default(0)
+  mvp               Int      @default(0)
+  yellowCards       Int      @default(0)
+  redCards          Int      @default(0)
+  leagueGoals       Int      @default(0)
+  leagueAssists     Int      @default(0)
+  leagueSaves       Int      @default(0)
+  leagueMatches     Int      @default(0)
+  leagueMvp         Int      @default(0)
+  leagueYellowCards Int      @default(0)
+  leagueRedCards    Int      @default(0)
+  careerGoals       Int      @default(0)
+  careerAssists     Int      @default(0)
+  careerSaves       Int      @default(0)
+  careerMatches     Int      @default(0)
+  careerMvp         Int      @default(0)
+  careerYellowCards Int      @default(0)
+  careerRedCards    Int      @default(0)
+  createdAt         DateTime @default(now())
+}
