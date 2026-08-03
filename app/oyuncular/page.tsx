@@ -53,7 +53,7 @@ gap-6
 
 {
 
-players.map((player)=>(
+players.map((player: any)=>{
 
 
 <Link
