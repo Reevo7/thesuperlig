@@ -54,17 +54,14 @@ export default async function Takimlar() {
 
 
 
-  const teams = teamNames.map((name)=>({
-
+ const teams = Object.keys(logos).map((name) => ({
     name,
-
     logo: logos[name] || "/logo.png",
 
     players: players.filter(
-      player => player.team === name
+      (player: any) => player.team === name
     )
-
-  }));
+}));
 
 
 
