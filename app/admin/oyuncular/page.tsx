@@ -23,7 +23,7 @@ export default async function OyuncularPage() {
         ) : (
           <div className="space-y-4">
 
-            {players.map((player) => (
+  {players.map((player) => (
               <Link
                 key={player.id}
                 href={`/admin/oyuncular/${player.steamId}`}
