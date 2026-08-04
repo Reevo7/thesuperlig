@@ -20,7 +20,7 @@ const logos:any={
 "İnternazionale Milano":"/teams/inter.png",
 "Falcon Buffet":"/teams/falcon.png",
 "Ronins":"/teams/ronins.png",
-"T1 Global":"/teams/t1.png",
+"Real Sociedad":"/teams/real-sociedad.png",
 "Mamak FC":"/teams/mamak.png",
 "Aedern":"/teams/aedern.png",
 "Relentless FC":"/teams/relentless.png",
