@@ -31,7 +31,7 @@ console.log("PLAYERS:", JSON.stringify(players, null, 2));
     "Falcon Buffet",
     "Zirve FK",
     "Nottingham Hotspur",
-    "Inter Milan"
+    "İnternazionale Milano"
   ];
 
 
@@ -49,7 +49,7 @@ console.log("PLAYERS:", JSON.stringify(players, null, 2));
     "Falcon Buffet": "/teams/falcon.png",
     "Zirve FK": "/teams/zirve.png",
     "Nottingham Hotspur": "/teams/nottingham.png",
-    "Inter Milan": "/teams/inter.png"
+    "İnternazionale Milano": "/teams/inter.png"
 
   };
 
