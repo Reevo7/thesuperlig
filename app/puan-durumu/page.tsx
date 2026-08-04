@@ -23,7 +23,7 @@ logo:"/teams/inter.png"
 
 {
 name:"Quick Boys",
-logo:"/teams/quickboys.png"
+logo: "/teams/QuickBoys.png"
 },
 
 {
