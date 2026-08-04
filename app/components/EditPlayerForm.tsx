@@ -132,8 +132,10 @@ export default function EditPlayerForm({
           <option>Panthera FC</option>
           <option>Falcon Buffet</option>
           <option>Zirve FK</option>
-
+          <option>İnternazionale Milano</option>
+          <option>Nottingham Hotspur</option>
         </select>
+      
 
 
       </div>
