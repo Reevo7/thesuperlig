@@ -16,7 +16,7 @@ export default async function Takimlar() {
     }
   });
 
-
+console.log("PLAYERS:", JSON.stringify(players, null, 2));
 
   const teamNames = [
     "Ronins",

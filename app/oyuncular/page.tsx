@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 
+
 export default async function OyuncularPage() {
   const players = await prisma.user.findMany({
     orderBy: {
@@ -7,36 +8,53 @@ export default async function OyuncularPage() {
     },
   });
 
+console.log(players);
+
   return (
     <div className="min-h-screen bg-[#070b14] text-white p-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[1800px] mx-auto">
 
         <h1 className="text-4xl font-black mb-8">
           Oyuncular
         </h1>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-7 gap-4">
 
           {players.map((player: any) => (
             <div
               key={player.id}
-              className="rounded-2xl bg-white/5 p-6"
+              className="
+                rounded-2xl
+                bg-white/5
+                p-4
+                hover:bg-white/10
+                transition
+                border
+                border-white/10
+              "
             >
+              <div className="flex flex-col items-center">
 
-              <h2 className="text-2xl font-bold">
-                {player.username}
-              </h2>
+               <img
+  src={player.avatar || "/logo.png"}
+  alt={player.username}
+  className="w-20 h-20 rounded-full border-2 border-white object-cover"
+/>
 
-              <p className="text-gray-400">
-                {player.team || "Takımı Yok"}
-              </p>
+                <h2 className="text-lg font-bold mt-3 text-center">
+                  {player.username}
+                </h2>
 
-              <div className="mt-4 space-y-1">
-                <p>⚽ Gol: {player.goals}</p>
-                <p>🅰️ Asist: {player.assists}</p>
-                <p>🧤 Save: {player.saves}</p>
+                <p className="text-sm text-gray-400 text-center">
+                  <pre>{JSON.stringify(player, null, 2)}</pre>
+                </p>
+
+                <div className="mt-4 w-full text-sm space-y-1">
+  <p>⚽ Gol: {player.leagueGoals}</p>
+  <p>🅰️ Asist: {player.leagueAssists}</p>
+  <p>🧤 Save: {player.leagueSaves}</p>
+</div>
               </div>
-
             </div>
           ))}
 

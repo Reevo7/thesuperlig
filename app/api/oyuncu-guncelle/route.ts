@@ -22,6 +22,8 @@ export async function POST(req: Request) {
       },
     });
 
+console.log(player);
+
     return NextResponse.json(player);
   } catch (error) {
     console.error(error);

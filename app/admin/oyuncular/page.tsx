@@ -26,7 +26,7 @@ export default async function OyuncularPage() {
   {players.map((player: any) => (
   <Link
     key={player.id}
-    href={`/oyuncu/${player.id}`}
+    href={`/oyuncu/${player.steamId}`}
     className="
       block
       rounded-2xl
@@ -46,11 +46,9 @@ export default async function OyuncularPage() {
 
     <div className="mt-5 text-sm text-slate-300 space-y-1">
 
-      <p>⚽ Gol: {player.goals}</p>
-
-      <p>🅰️ Asist: {player.assists}</p>
-
-      <p>🧤 Save: {player.saves}</p>
+     <p>⚽ Gol: {player.leagueGoals}</p>
+<p>🅰️ Asist: {player.leagueAssists}</p>
+<p>🧤 Save: {player.leagueSaves}</p>
 
     </div>
 

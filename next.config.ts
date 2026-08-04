@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
-
 const nextConfig: NextConfig = {
-
   devIndicators: false,
 
   images: {
@@ -10,11 +8,11 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "avatars.steamstatic.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
-
 };
-
 
 export default nextConfig;
