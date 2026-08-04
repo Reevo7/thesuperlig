@@ -126,7 +126,7 @@ export default function EditPlayerForm({
           <option>Ronins</option>
           <option>Relentless FC</option>
           <option>Aedern</option>
-          <option>T1 Global</option>
+          <option>Real Sociedad</option>
           <option>Quick Boys</option>
           <option>Mamak FC</option>
           <option>Panthera FC</option>

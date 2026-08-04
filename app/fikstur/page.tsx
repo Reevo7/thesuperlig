@@ -41,7 +41,7 @@ matches:[
 ["Quick Boys","3 - 1","Zirve FK"],
 ["Nottingham Hotspur","6 - 0","Panthera FC"],
 ["İnternazionale Milano","3 - 0","Falcon Buffet"],
-["Ronins","2 - 0","T1 Global"],
+["Ronins","2 - 0","Real Sociedad"],
 ["Mamak FC","1 - 8","Aedern"],
 ["Relentless FC","1 - 2","West Coast"]
 
@@ -58,7 +58,7 @@ matches:[
 ["Relentless FC","5 - 0","Zirve FK"],
 ["West Coast","3 - 0","Panthera FC"],
 ["Aedern","3 - 0","Quick Boys"],
-["T1 Global","0 - 3","Falcon Buffet"]
+["Real Sociedad","0 - 3","Falcon Buffet"]
 
 ]
 
@@ -71,7 +71,7 @@ matches:[
 ["Relentless FC","","Ronins"],
 ["West Coast","","İnternazionale Milano"],
 ["Aedern","","Zirve FK"],
-["T1 Global","","Panthera FC"],
+["Real Sociedad","","Panthera FC"],
 ["Nottingham Hotspur","","Mamak FC"],
 ["Falcon Buffet","","Quick Boys"]
 
@@ -84,7 +84,7 @@ const week4 = {
 matches:[
 
 ["Aedern","","Relentless FC"],
-["T1 Global","","Mamak FC"],
+["Real Sociedad","","Mamak FC"],
 ["Nottingham Hotspur","","West Coast"],
 ["Falcon Buffet","","Ronins"],
 ["Quick Boys","","İnternazionale Milano"],
@@ -98,7 +98,7 @@ const week5 = {
 
 matches:[
 
-["Quick Boys","","T1 Global"],
+["Quick Boys","","Real Sociedad"],
 ["Nottingham Hotspur","","Falcon Buffet"],
 ["Panthera FC","","Aedern"],
 ["Zirve FK","","West Coast"],
@@ -117,7 +117,7 @@ matches:[
 ["Nottingham Hotspur","","Zirve FK"],
 ["Ronins","","Quick Boys"],
 ["Mamak FC","","Falcon Buffet"],
-["Relentless FC","","T1 Global"],
+["Relentless FC","","Real Sociedad"],
 ["West Coast","","Aedern"]
 
 ]
@@ -133,7 +133,7 @@ matches:[
 ["Mamak FC","","Panthera FC"],
 ["Relentless FC","","Quick Boys"],
 ["West Coast","","Falcon Buffet"],
-["Aedern","","T1 Global"]
+["Aedern","","Real Sociedad"]
 
 ]
 
@@ -143,7 +143,7 @@ const week8 = {
 
 matches:[
 
-["T1 Global","","West Coast"],
+["Real Sociedad","","West Coast"],
 ["Falcon Buffet","","Relentless FC"],
 ["Nottingham Hotspur","","Aedern"],
 ["Quick Boys","","Mamak FC"],
@@ -161,7 +161,7 @@ matches:[
 ["Nottingham Hotspur","","Relentless FC"],
 ["West Coast","","Mamak FC"],
 ["Aedern","","Ronins"],
-["T1 Global","","İnternazionale Milano"],
+["Real Sociedad","","İnternazionale Milano"],
 ["Falcon Buffet","","Zirve FK"],
 ["Quick Boys","","Panthera FC"]
 
@@ -175,7 +175,7 @@ const week10 = {
 matches:[
 
 ["Panthera FC","","Falcon Buffet"],
-["Zirve FK","","T1 Global"],
+["Zirve FK","","Real Sociedad"],
 ["Nottingham Hotspur","","Quick Boys"],
 ["İnternazionale Milano","","Aedern"],
 ["Ronins","","West Coast"],
@@ -192,7 +192,7 @@ matches:[
 ["Falcon Buffet","","Aedern"],
 ["Quick Boys","","West Coast"],
 ["Panthera FC","","Relentless FC"],
-["Nottingham Hotspur","","T1 Global"],
+["Nottingham Hotspur","","Real Sociedad"],
 ["Zirve FK","","Mamak FC"],
 ["İnternazionale Milano","","Ronins"]
 
@@ -209,7 +209,7 @@ matches:[
 ["Zirve FK","","Relentless FC"],
 ["Panthera FC","","West Coast"],
 ["Quick Boys","","Aedern"],
-["Falcon Buffet","","T1 Global"]
+["Falcon Buffet","","Real Sociedad"]
 
 ]
 
@@ -219,7 +219,7 @@ const week13 = {
 
 matches:[
 
-["West Coast","","T1 Global"],
+["West Coast","","Real Sociedad"],
 ["Relentless FC","","Falcon Buffet"],
 ["Mamak FC","","Quick Boys"],
 ["Ronins","","Panthera FC"],
@@ -237,7 +237,7 @@ matches:[
 ["Mamak FC","","West Coast"],
 ["Relentless FC","","Nottingham Hotspur"],
 ["Ronins","","Aedern"],
-["İnternazionale Milano","","T1 Global"],
+["İnternazionale Milano","","Real Sociedad"],
 ["Zirve FK","","Falcon Buffet"],
 ["Panthera FC","","Quick Boys"]
 
@@ -250,7 +250,7 @@ const week15 = {
 matches:[
 
 ["Relentless FC","","Aedern"],
-["Mamak FC","","T1 Global"],
+["Mamak FC","","Real Sociedad"],
 ["Ronins","","Falcon Buffet"],
 ["İnternazionale Milano","","Quick Boys"],
 ["West Coast","","Nottingham Hotspur"],
@@ -265,7 +265,7 @@ const week16 = {
 matches:[
 
 ["Falcon Buffet","","Nottingham Hotspur"],
-["T1 Global","","Quick Boys"],
+["Real Sociedad","","Quick Boys"],
 ["Aedern","","Panthera FC"],
 ["West Coast","","Zirve FK"],
 ["Relentless FC","","İnternazionale Milano"],
@@ -283,7 +283,7 @@ matches:[
 ["Quick Boys","","Ronins"],
 ["Zirve FK","","Nottingham Hotspur"],
 ["Falcon Buffet","","Mamak FC"],
-["T1 Global","","Relentless FC"],
+["Real Sociedad","","Relentless FC"],
 ["Aedern","","West Coast"]
 
 ]
@@ -298,7 +298,7 @@ matches:[
 ["West Coast","","Quick Boys"],
 ["Relentless FC","","Panthera FC"],
 ["Mamak FC","","Zirve FK"],
-["T1 Global","","Nottingham Hotspur"],
+["Real Sociedad","","Nottingham Hotspur"],
 ["Ronins","","İnternazionale Milano"]
 
 ]
@@ -313,7 +313,7 @@ matches:[
 ["Ronins","","Relentless FC"],
 ["İnternazionale Milano","","West Coast"],
 ["Zirve FK","","Aedern"],
-["Panthera FC","","T1 Global"],
+["Panthera FC","","Real Sociedad"],
 ["Quick Boys","","Falcon Buffet"]
 
 ]
@@ -325,7 +325,7 @@ const week20 = {
 matches:[
 
 ["Falcon Buffet","","Panthera FC"],
-["T1 Global","","Zirve FK"],
+["Real Sociedad","","Zirve FK"],
 ["Aedern","","İnternazionale Milano"],
 ["Quick Boys","","Nottingham Hotspur"],
 ["West Coast","","Ronins"],
@@ -342,7 +342,7 @@ matches:[
 ["Quick Boys","","Zirve FK"],
 ["Panthera FC","","Nottingham Hotspur"],
 ["Falcon Buffet","","İnternazionale Milano"],
-["T1 Global","","Ronins"],
+["Real Sociedad","","Ronins"],
 ["Aedern","","Mamak FC"],
 ["West Coast","","Relentless FC"]
 
@@ -359,7 +359,7 @@ matches:[
 ["Quick Boys","","Relentless FC"],
 ["Falcon Buffet","","West Coast"],
 ["İnternazionale Milano","","Nottingham Hotspur"],
-["T1 Global","","Aedern"]
+["Real Sociedad","","Aedern"]
 
 ]
 
