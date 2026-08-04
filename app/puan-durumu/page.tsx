@@ -47,8 +47,8 @@ logo:"/teams/zirve.png"
 },
 
 {
-name:"T1 Global",
-logo:"/teams/t1.png"
+name:"Real Sociedad",
+logo:"/teams/real-sociedad.png"
 },
 
 {
