@@ -46,8 +46,8 @@ console.log(players);
                 </h2>
 
                 <p className="text-sm text-gray-400 text-center">
-                  <pre>{JSON.stringify(player, null, 2)}</pre>
-                </p>
+  {player.team || "Takımı Yok"}
+</p>
 
                 <div className="mt-4 w-full text-sm space-y-1">
   <p>⚽ Gol: {player.leagueGoals}</p>
