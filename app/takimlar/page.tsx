@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import TakimListesi from "./TakimListesi.";
 
+export const dynamic = "force-dynamic";
 
 export default async function Takimlar() {
 
