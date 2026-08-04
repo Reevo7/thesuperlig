@@ -26,7 +26,7 @@ export default async function OyuncuProfil({
   "Ronins": "/teams/ronins.png",
   "Relentless FC": "/teams/relentless.png",
   "Aedern": "/teams/aedern.png",
-  "T1 Global": "/teams/t1.png",
+  "Real Sociedad": "/teams/real-sociedad.png",
   "Quick Boys": "/teams/QuickBoys.png",
   "Mamak FC": "/teams/mamak.png",
   "Panthera FC": "/teams/panthera.png",
