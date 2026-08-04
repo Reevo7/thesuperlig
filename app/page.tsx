@@ -57,18 +57,13 @@ export default function Home() {
 
         {/* İstatistik Kartları */}
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
 
-          <Stat
-            title="Oyuncular"
-            value="0"
-            icon="👤"
-            delay={100}
-          />
+          
 
           <Stat
             title="Takımlar"
-            value="0"
+            value="12"
             icon="🛡"
             delay={250}
           />
