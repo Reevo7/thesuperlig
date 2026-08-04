@@ -45,37 +45,38 @@ console.log(players.map((p) => p.username));
 
 
 
-      <div className="
-      grid
-      md:grid-cols-3
-      gap-6
-      ">
+      <div
+  className="slide-down mb-8"
+  style={{ animationDelay: "0s" }}
+>
+  <StatCard
+    title="⚽ Gol Krallığı"
+    players={golKralligi}
+    type="gol"
+  />
+</div>
 
+<div
+  className="slide-down mb-8"
+  style={{ animationDelay: ".15s" }}
+>
+  <StatCard
+    title="🎯 Asist Krallığı"
+    players={asistKralligi}
+    type="asist"
+  />
+</div>
 
-
-        <StatCard
-        title="⚽ Gol Krallığı"
-        players={golKralligi}
-        type="gol"
-        />
-
-
-        <StatCard
-        title="🎯 Asist Krallığı"
-        players={asistKralligi}
-        type="asist"
-        />
-
-
-        <StatCard
-        title="🧤 Save Krallığı"
-        players={saveKralligi}
-        type="save"
-        />
-
-
-      </div>
-
+<div
+  className="slide-down"
+  style={{ animationDelay: ".3s" }}
+>
+  <StatCard
+    title="🧤 Save Krallığı"
+    players={saveKralligi}
+    type="save"
+  />
+</div>
 
     </div>
 
@@ -126,14 +127,15 @@ const player = players[index];
 return (
 
 <div
-key={index}
-className="
-flex
-items-center
-justify-between
-bg-black/20
-rounded-xl
-p-3
+  key={index}
+  className="
+  flex
+  items-center
+  justify-between
+  bg-black/20
+  rounded-xl
+  px-4
+  h-14
 "
 >
 
@@ -160,11 +162,11 @@ player ? (
 <>
 
 <img
-src={player.avatar || "/logo.png"}
-className="
-w-10
-h-10
-rounded-full
+  src={player.avatar || "/logo.png"}
+  className="
+  w-8
+  h-8
+  rounded-full
 "
 />
 
