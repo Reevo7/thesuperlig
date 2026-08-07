@@ -5,6 +5,8 @@ import { useState } from "react";
 type Player = {
   steamId: string;
   team: string | null;
+ position: string;
+country: string;
   leagueMatches: number;
   leagueGoals: number;
   leagueAssists: number;
@@ -29,6 +31,8 @@ export default function EditPlayerForm({
     player.team || "Takımı Yok"
   );
 
+const [position, setPosition] = useState(player.position);
+const [country, setCountry] = useState(player.country);
 
   const [leagueMatches, setLeagueMatches] = useState(player.leagueMatches);
   const [leagueGoals, setLeagueGoals] = useState(player.leagueGoals);
@@ -53,21 +57,23 @@ export default function EditPlayerForm({
         "Content-Type":"application/json",
       },
 
-      body:JSON.stringify({
+      body: JSON.stringify({
 
-        steamId:player.steamId,
+  steamId: player.steamId,
 
-        team,
+  team,
+  position,
+  country,
 
-        leagueMatches,
-        leagueGoals,
-        leagueAssists,
-        leagueSaves,
-        leagueMvp,
-        leagueYellowCards,
-        leagueRedCards,
+  leagueMatches,
+  leagueGoals,
+  leagueAssists,
+  leagueSaves,
+  leagueMvp,
+  leagueYellowCards,
+  leagueRedCards,
 
-      }),
+}),
 
     });
 
@@ -140,8 +146,63 @@ export default function EditPlayerForm({
 
       </div>
 
+<div>
 
+  <label className="block mb-2 text-white/70">
+    Pozisyon
+  </label>
 
+  <select
+    value={position}
+    onChange={(e) => setPosition(e.target.value)}
+    className="
+      w-full
+      bg-[#111827]
+      border
+      border-white/10
+      rounded-xl
+      p-3
+      text-white
+    "
+  >
+    <option>GK</option>
+    <option>LB</option>
+    <option>CB</option>
+    <option>RB</option>
+    <option>CDM</option>
+    <option>CM</option>
+    <option>CAM</option>
+    <option>LW</option>
+    <option>RW</option>
+    <option>ST</option>
+  </select>
+
+</div>
+
+<div>
+
+  <label className="block mb-2 text-white/70">
+    Ülke
+  </label>
+
+  <input
+    type="text"
+    value={country}
+    onChange={(e) => setCountry(e.target.value.toUpperCase())}
+    placeholder="TR"
+    maxLength={2}
+    className="
+      w-full
+      bg-[#111827]
+      border
+      border-white/10
+      rounded-xl
+      p-3
+      text-white
+    "
+  />
+
+</div>
 
       {/* İstatistikler */}
 

@@ -38,6 +38,21 @@ export default async function OyuncuProfil({
 
 const teamLogo = teamLogos[player.team || ""] || "/logo.png";
 
+const rating = Math.min(
+  99,
+  Math.max(
+    60,
+    Math.round(
+      60 +
+      player.leagueGoals * 2 +
+      player.leagueAssists * 1.5 +
+      player.leagueMvp * 3 +
+      player.leagueSaves * 1.5 +
+      player.leagueMatches * 0.3
+    )
+  )
+);
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] p-8 text-white">
       <div className="max-w-5xl mx-auto">

@@ -9,17 +9,19 @@ export async function POST(req: Request) {
       where: {
         steamId: body.steamId,
       },
-      data: {
-        team: body.team,
+     data: {
+  team: body.team,
+  position: body.position,
+  country: body.country,
 
-        leagueMatches: Number(body.leagueMatches),
-        leagueGoals: Number(body.leagueGoals),
-        leagueAssists: Number(body.leagueAssists),
-        leagueSaves: Number(body.leagueSaves),
-        leagueMvp: Number(body.leagueMvp),
-        leagueYellowCards: Number(body.leagueYellowCards),
-        leagueRedCards: Number(body.leagueRedCards),
-      },
+  leagueMatches: Number(body.leagueMatches),
+  leagueGoals: Number(body.leagueGoals),
+  leagueAssists: Number(body.leagueAssists),
+  leagueSaves: Number(body.leagueSaves),
+  leagueMvp: Number(body.leagueMvp),
+  leagueYellowCards: Number(body.leagueYellowCards),
+  leagueRedCards: Number(body.leagueRedCards),
+},
     });
 
 console.log(player);
