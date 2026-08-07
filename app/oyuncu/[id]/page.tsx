@@ -99,11 +99,10 @@ export default async function OyuncuProfil({
             alt={player.team || ""}
             className="w-12 h-12 object-contain"
           />
-
-         <img
-  src="/flags/tr.svg"
+<img
+  src="/flags/tr.png"
   alt="Türkiye"
-  className="w-8 h-6 rounded-sm object-cover"
+  className="w-7 h-5 object-cover rounded-sm"
 />
         </div>
 
