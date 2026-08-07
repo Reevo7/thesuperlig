@@ -37,3 +37,25 @@ country  String @default("TR")
   careerRedCards    Int      @default(0)
   createdAt         DateTime @default(now())
 }
+model CareerHistory {
+  id            Int      @id @default(autoincrement())
+
+  steamId       String
+
+  season        String
+  team          String
+teamLogo      String?
+
+  matches       Int @default(0)
+  firstSix      Int @default(0)
+
+  goals         Int @default(0)
+  assists       Int @default(0)
+  passes        Int @default(0)
+  saves         Int @default(0)
+
+  yellowCards   Int @default(0)
+  redCards      Int @default(0)
+
+  createdAt     DateTime @default(now())
+}
