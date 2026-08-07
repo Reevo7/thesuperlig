@@ -71,27 +71,38 @@ window.location.reload();
 
 return (
 
-<aside className="
+<aside
+className="
 fixed
 left-0
 top-0
 h-screen
 w-72
 border-r
-border-white/10
-bg-[#070b14]
+border-white/5
+bg-gradient-to-b
+from-[#0d1220]
+via-[#0b101b]
+to-[#070b14]
+backdrop-blur-xl
+shadow-2xl
 p-6
 text-white
-">
+"
+>
 
 
 
-<div className="
+<div
+className="
 flex
 items-center
-gap-3
-animate-fade
-">
+gap-4
+pb-6
+border-b
+border-white/10
+"
+>
 
 
 <div
@@ -155,12 +166,14 @@ Süper Lig
 
 
 
-<nav className="
-mt-10
+<nav
+className="
+mt-8
 flex
 flex-col
-gap-2
-">
+gap-3
+"
+>
 
 
 <Menu href="/" text=" Ana Sayfa" />
@@ -213,8 +226,10 @@ items-center
 gap-3
 rounded-xl
 border
-border-white/20
-bg-white/5
+bg-white/[0.04]
+border-white/10
+backdrop-blur-xl
+shadow-xl
 p-3
 transition
 hover:bg-white/10
