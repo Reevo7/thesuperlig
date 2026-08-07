@@ -92,22 +92,21 @@ export default async function OyuncuProfil({
         </h1>
 
     
-        <div className="-mt-1 flex items-center justify-center gap-3">
+        <div className="mt-4 mb-4 flex items-center justify-center gap-2">
 
   <img
     src={teamLogo}
     alt={player.team || ""}
-    className="w-10 h-10 object-contain"
+    className="w-7 h-7 object-contain"
   />
 
   <img
     src="/flags/tr.png"
     alt="Türkiye"
-    className="w-10 h-7 rounded object-cover"
+    className="w-6 h-4 rounded-sm object-cover"
   />
 
 </div>
-
       </div>
 
       <div className="mt-auto border-t border-white/10 pt-6">
