@@ -12,6 +12,8 @@ model User {
   username          String
   avatar            String?
   team              String?
+position String @default("ST")
+country  String @default("TR")
   goals             Int      @default(0)
   assists           Int      @default(0)
   saves             Int      @default(0)
