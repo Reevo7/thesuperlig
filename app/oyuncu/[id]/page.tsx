@@ -67,7 +67,7 @@ export default async function OyuncuProfil({
 
         <div>
 
-          <h1 className="text-7xl font-black leading-none text-yellow-400">
+          <h1 className="text-7xl font-black leading-none text-white">
             {rating}
           </h1>
 
@@ -103,9 +103,11 @@ export default async function OyuncuProfil({
             className="w-12 h-12 object-contain"
           />
 
-          <span className="text-3xl">
-            🇹🇷
-          </span>
+          <img
+  src="/flags/tr.png"
+  alt="Türkiye"
+  className="w-9 h-6 rounded-sm object-cover"
+/>
 
         </div>
 
@@ -169,7 +171,7 @@ export default async function OyuncuProfil({
 
     {/* SAĞ TARAF */}
 
-    <div className="flex-1 space-y-6">
+    <div className="flex-1 space-y-6 pt-1">
             <div className="rounded-3xl border border-white/10 bg-[#10131b] p-6">
 
         <h2 className="mb-6 text-2xl font-black">
