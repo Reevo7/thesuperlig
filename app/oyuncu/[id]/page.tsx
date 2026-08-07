@@ -91,10 +91,7 @@ export default async function OyuncuProfil({
           {player.username}
         </h1>
 
-        <p className="mt-2 text-sm text-zinc-400">
-          {player.steamId}
-        </p>
-
+    
         <div className="mt-6 flex items-center gap-3">
 
           <img
@@ -103,17 +100,16 @@ export default async function OyuncuProfil({
             className="w-12 h-12 object-contain"
           />
 
-          <img
-  src="/flags/tr.png"
+         <img
+  src="/flags/tr.svg"
   alt="Türkiye"
-  className="w-9 h-6 rounded-sm object-cover"
+  className="w-8 h-6 rounded-sm object-cover"
 />
-
         </div>
 
       </div>
 
-      <div className="mt-10 border-t border-white/10 pt-6">
+      <div className="mt-auto border-t border-white/10 pt-6">
 
         <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-lg">
                     <div className="flex justify-between">
