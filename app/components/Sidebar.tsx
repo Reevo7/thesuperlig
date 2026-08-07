@@ -424,44 +424,57 @@ Steam ile Giriş
 
 
 function Menu({
-
-href,
-
-text,
-
+  href,
+  text,
 }: {
-
-href:string;
-
-text:string;
-
+  href: string;
+  text: string;
 }) {
+  return (
+    <Link
+      href={href}
+      className="
+      group
+      relative
+      flex
+      items-center
+      rounded-2xl
+      border
+      border-white/5
+      bg-white/[0.03]
+      px-5
+      py-3.5
+      text-slate-300
+      font-medium
+      transition-all
+      duration-300
+      hover:bg-gradient-to-r
+      hover:from-blue-600/20
+      hover:to-cyan-500/10
+      hover:border-blue-500/40
+      hover:text-white
+      hover:shadow-lg
+      hover:shadow-blue-500/10
+      "
+    >
+      <span
+        className="
+        absolute
+        left-0
+        top-2
+        bottom-2
+        w-1
+        rounded-r-full
+        bg-blue-500
+        opacity-0
+        transition
+        group-hover:opacity-100
+        "
+      />
 
-
-return (
-
-<Link
-
-href={href}
-
-className="
-rounded-xl
-px-4
-py-3
-text-slate-300
-transition
-hover:bg-white/10
-hover:text-white
-hover:translate-x-2
-"
-
->
-
-{text}
-
-</Link>
-
-);
-
-
+      <span className="ml-2">
+        {text}
+      </span>
+    </Link>
+  );
 }
