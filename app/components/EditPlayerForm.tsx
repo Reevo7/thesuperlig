@@ -167,14 +167,10 @@ const [country, setCountry] = useState(player.country);
   >
     <option>GK</option>
     <option>LB</option>
-    <option>CB</option>
     <option>RB</option>
-    <option>CDM</option>
     <option>CM</option>
-    <option>CAM</option>
     <option>LW</option>
     <option>RW</option>
-    <option>ST</option>
   </select>
 
 </div>

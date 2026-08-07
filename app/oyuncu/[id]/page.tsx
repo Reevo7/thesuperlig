@@ -59,6 +59,20 @@ const rating = Math.min(
 
         <div className="card p-8">
 
+<div className="flex justify-between items-start mb-8">
+
+  <div>
+    <h1 className="text-7xl font-black text-yellow-400">
+      {rating}
+    </h1>
+  </div>
+
+  <div className="text-4xl font-black text-white">
+    {"ST"}
+  </div>
+
+</div>
+
           <div className="flex items-center gap-6">
 
             <img

@@ -126,30 +126,21 @@ export default function PlayerEditList({
 
 
             <EditPlayerForm
+  player={{
+    steamId: player.steamId,
+    team: player.team,
+    position: player.position,
+    country: player.country,
 
-              player={{
-
-                steamId: player.steamId,
-
-                team: player.team,
-
-                leagueMatches: player.leagueMatches,
-
-                leagueGoals: player.leagueGoals,
-
-                leagueAssists: player.leagueAssists,
-
-                leagueSaves: player.leagueSaves,
-
-                leagueMvp: player.leagueMvp,
-
-                leagueYellowCards: player.leagueYellowCards,
-
-                leagueRedCards: player.leagueRedCards,
-
-              }}
-
-            />
+    leagueMatches: player.leagueMatches,
+    leagueGoals: player.leagueGoals,
+    leagueAssists: player.leagueAssists,
+    leagueSaves: player.leagueSaves,
+    leagueMvp: player.leagueMvp,
+    leagueYellowCards: player.leagueYellowCards,
+    leagueRedCards: player.leagueRedCards,
+  }}
+/>
 
 
 
