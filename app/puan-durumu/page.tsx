@@ -42,8 +42,8 @@ logo:"/teams/relentless.png"
 },
 
 {
-name:"Zirve FK",
-logo:"/teams/zirve.png"
+name:"Floria",
+logo:"/teams/floria.png"
 },
 
 {

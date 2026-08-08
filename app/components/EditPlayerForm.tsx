@@ -41,9 +41,6 @@ const [country, setCountry] = useState(player.country);
   const [leagueMvp, setLeagueMvp] = useState(player.leagueMvp);
   const [leagueYellowCards, setLeagueYellowCards] = useState(player.leagueYellowCards);
   const [leagueRedCards, setLeagueRedCards] = useState(player.leagueRedCards);
-const [season, setSeason] = useState("");
-const [firstSix, setFirstSix] = useState(0);
-const [passes, setPasses] = useState(0);
 
 
   async function kaydet(){
@@ -95,53 +92,7 @@ const [passes, setPasses] = useState(0);
 
   }
 
-async function kariyerEkle() {
 
-  const res = await fetch("/api/kariyer-ekle", {
-
-    method: "POST",
-
-    headers: {
-      "Content-Type": "application/json",
-    },
-
-    body: JSON.stringify({
-
-      steamId: player.steamId,
-
-      season,
-
-      team,
-
-      teamLogo: `/teams/${team}.png`,
-
-      matches: leagueMatches,
-      firstSix,
-
-      goals: leagueGoals,
-      assists: leagueAssists,
-      passes,
-
-      saves: leagueSaves,
-
-      yellowCards: leagueYellowCards,
-      redCards: leagueRedCards,
-
-    }),
-
-  });
-
-  if (res.ok) {
-
-    alert("Kariyer satırı eklendi.");
-
-  } else {
-
-    alert("Bir hata oluştu.");
-
-  }
-
-}
 
   return (
 
@@ -185,7 +136,7 @@ async function kariyerEkle() {
           <option>Mamak FC</option>
           <option>Panthera FC</option>
           <option>Falcon Buffet</option>
-          <option>Zirve FK</option>
+          <option>Floria</option>
           <option>İnternazionale Milano</option>
           <option>Nottingham Hotspur</option>
         </select>
@@ -307,9 +258,18 @@ async function kariyerEkle() {
 
 
 
+<div className="border border-white/10 rounded-2xl p-5 space-y-4">
 
+  <h2 className="text-xl font-bold">
+    📜 Kariyer Geçmişi
+  </h2>
+
+
+
+</div>
 
       <div className="flex justify-end">
+
 
 
         <button

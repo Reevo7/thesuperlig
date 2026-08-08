@@ -29,7 +29,7 @@ console.log("PLAYERS:", JSON.stringify(players, null, 2));
     "Mamak FC",
     "Panthera FC",
     "Falcon Buffet",
-    "Zirve FK",
+    "Floria",
     "Nottingham Hotspur",
     "İnternazionale Milano"
   ];
@@ -47,7 +47,7 @@ console.log("PLAYERS:", JSON.stringify(players, null, 2));
     "Mamak FC": "/teams/mamak.png",
     "Panthera FC": "/teams/panthera.png",
     "Falcon Buffet": "/teams/falcon.png",
-    "Zirve FK": "/teams/zirve.png",
+    "Floria": "/teams/floria.png",
     "Nottingham Hotspur": "/teams/nottingham.png",
     "İnternazionale Milano": "/teams/inter.png"
 
