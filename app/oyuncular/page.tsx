@@ -24,52 +24,48 @@ export default async function OyuncularPage() {
 
             <Link
               key={player.id}
-              href={`/oyuncular/${player.steamId}`}
+              href={`/oyuncu/${player.steamId}`}
+              className="
+                animate-[slideDown_.5s_ease_forwards]
+                rounded-2xl
+                bg-white/5
+                p-4
+                hover:bg-white/10
+                transition
+                border
+                border-white/10
+                opacity-0
+                block
+              "
+              style={{
+                animationDelay: `${index * 0.08}s`,
+              }}
             >
-              <div
-                className="
-                  animate-[slideDown_.5s_ease_forwards]
-                  rounded-2xl
-                  bg-white/5
-                  p-4
-                  hover:bg-white/10
-                  hover:scale-105
-                  transition
-                  border
-                  border-white/10
-                  opacity-0
-                  cursor-pointer
-                "
-                style={{
-                  animationDelay: `${index * 0.08}s`,
-                }}
-              >
 
-                <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center">
 
-                  <img
-                    src={player.avatar || "/logo.png"}
-                    alt={player.username}
-                    className="w-20 h-20 rounded-full border-2 border-white object-cover"
-                  />
+                <img
+                  src={player.avatar || "/logo.png"}
+                  alt={player.username}
+                  className="w-20 h-20 rounded-full border-2 border-white object-cover"
+                />
 
-                  <h2 className="text-lg font-bold mt-3 text-center">
-                    {player.username}
-                  </h2>
+                <h2 className="text-lg font-bold mt-3 text-center">
+                  {player.username}
+                </h2>
 
-                  <p className="text-sm text-gray-400 text-center">
-                    {player.team || "Takımı Yok"}
-                  </p>
+                <p className="text-sm text-gray-400 text-center">
+                  {player.team || "Takımı Yok"}
+                </p>
 
-                  <div className="mt-4 w-full text-sm space-y-1">
-                    <p>⚽ Gol: {player.leagueGoals}</p>
-                    <p>🅰️ Asist: {player.leagueAssists}</p>
-                    <p>🧤 Save: {player.leagueSaves}</p>
-                  </div>
-
+                <div className="mt-4 w-full text-sm space-y-1">
+                  <p>⚽ Gol: {player.leagueGoals}</p>
+                  <p>🅰️ Asist: {player.leagueAssists}</p>
+                  <p>🧤 Save: {player.leagueSaves}</p>
                 </div>
 
               </div>
+
             </Link>
 
           ))}
